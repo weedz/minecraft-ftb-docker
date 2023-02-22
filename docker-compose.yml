@@ -1,0 +1,15 @@
+services:
+  ftb-server:
+    build:
+      context: .
+    ports:
+      - "25565:25565"
+    environment:
+      MOD_ID: 101
+      VERSION_ID: 2336
+      EULA: 1
+    restart: unless-stopped
+    volumes:
+     - ftb-server:/app
+volumes:
+  ftb-server:
