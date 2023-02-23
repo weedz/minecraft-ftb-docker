@@ -1,7 +1,6 @@
 services:
   ftb-server:
-    build:
-      context: .
+    image: ghcr.io/weedz/ftb-server:latest
     ports:
       - "25565:25565"
     environment:
